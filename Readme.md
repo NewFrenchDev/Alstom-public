@@ -1,6 +1,6 @@
 # Contents
 
-This repository has for purpose to regroup all the scripts I made for ALSTOM automating annoying task.
+This repository has for purpose to regroup all the scripts I made for ALSTOM automating annoying task. 🥱
 
 Objectives:
     * Maximize our productivity ⌚
