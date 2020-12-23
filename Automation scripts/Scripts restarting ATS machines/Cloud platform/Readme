@@ -1,8 +1,0 @@
-Script can be recovered here if lost: https://github.com/NewFrenchDev/Alstom-public
-
-This script is used on TCC1 or TCC2 (Workstation/VM corresponding to the HMI)
-
-You need also to put the script in the path said in it (script_path).
-If you don't want to put in the default path I wrote, you can change it with the path where you want to put it on the network.
-
-IMPORTANT: The path needs to be accessible by all VMs!
