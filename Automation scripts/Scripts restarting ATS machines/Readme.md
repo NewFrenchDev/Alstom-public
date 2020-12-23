@@ -29,6 +29,6 @@ When you want to simply doing copy from one folder to another there no need for 
 By default all schedule task created by schtasks are at level 7 which is too low (Below Normal).   
 That's why I put the priority level to 2 (Above Normal) and yes the only way to do that is with a XML file.
 
-## Oh, you want to see other scripts and projects done by me you said?! 😏
+## Oh, you found this outside of my GitHub and you want to see my other scripts and projects?! 😏
 
 [<img align="left" alt="GitHub" width="100px" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>](https://github.com/NewFrenchDev) https://github.com/NewFrenchDev/
