@@ -1,0 +1,9 @@
+This scripts are used for saving logs from SRV on a disk or a sharing folder on the network
+
+Scripts are adapted for each project
+There are 2 versions, one for physical workstation and another for cloud platform
+
+One script is executed on the Workstation/VM corresponding to the HMI in order to launch the second script in the path indicated in it
+The path is depending on if it's about a cloud platform or physical workstation (path is indicated in the script)
+
+All Logs will be saved in a folder named Backup_ATS
