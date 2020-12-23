@@ -14,7 +14,8 @@ if not exist "%Disk%:" (
 						)
 
 ::Autosaving-Logs.bat path
-set script_path=\\tsclient\%Disk%\Autosaving-Logs.bat
+set script_path=%Disk%:\Autosaving-Logs.bat
+set network_script_path=\\tsclient\%Disk%\Autosaving-Logs.bat
 
 if not exist "%script_path%"   (
 								echo Autosaving-Logs.bat is not on %Disk%:\
@@ -31,10 +32,10 @@ set /p password=
 
 ::Schedule tasks on each remote computer in purpose to run the script on each of them
 ::SRV1A
-schtasks /s ATSSRV1A /u %user% /p %password%  /create /tn "Saving logs on disk" /tr "%script_path%" /sc ONCE /sd 01/01/1990 /st 00:00 /F
+schtasks /s ATSSRV1A /u %user% /p %password%  /create /tn "Saving logs on disk" /tr "%network_script_path%" /sc ONCE /sd 01/01/1990 /st 00:00 /F
 schtasks /s ATSSRV1A /u %user% /p %password% /run /tn "Saving logs on disk" /I
 ::SRV2A
-schtasks /s ATSSRV2A /u %user% /p %password%  /create /tn "Saving logs on disk" /tr "%script_path%" /sc ONCE /sd 01/01/1990 /st 00:00 /F
+schtasks /s ATSSRV2A /u %user% /p %password%  /create /tn "Saving logs on disk" /tr "%network_script_path%" /sc ONCE /sd 01/01/1990 /st 00:00 /F
 schtasks /s ATSSRV2A /u %user% /p %password% /run /tn "Saving logs on disk" /I
 
 ::End
